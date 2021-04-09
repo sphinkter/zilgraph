@@ -51,7 +51,7 @@ class zilcrawl:
         # active_chain.api = ZilliqaAPI("http://localhost:4201")
 
         # Delete existing index
-        # self.es.indices.delete(index='zilcrawl', ignore=[400, 404])
+        self.es.indices.delete(index='zilcrawl', ignore=[400, 404])
 
         query_body = {
             "aggs" : {
