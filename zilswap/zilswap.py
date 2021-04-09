@@ -66,7 +66,7 @@ class zilswap:
         except Exception as e:
             print(e)
             # block_begin = 811030  # Zilswap Contract Creation
-             block_begin = 1085759  # Buttcoin Contract Creation
+            block_begin = 1085759  # Buttcoin Contract Creation
         
         block_end   = int(chain.active_chain.api.GetNumTxBlocks())
         
