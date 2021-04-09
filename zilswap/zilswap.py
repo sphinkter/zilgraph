@@ -36,7 +36,7 @@ class zilswap:
         
         # Set pyzil default API endpoint
         # active_chain.api = ZilliqaAPI("https://api.zilliqa.com/")
-         active_chain.api = ZilliqaAPI("https://ssn.zillet.io/")
+        active_chain.api = ZilliqaAPI("https://ssn.zillet.io/")
         # active_chain.api = ZilliqaAPI("http://localhost:4201")
         
         # Load Zilgraph JSON 
