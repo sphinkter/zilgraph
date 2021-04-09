@@ -42,12 +42,13 @@ class zilcrawl:
         chain.set_active_chain(chain.MainNet)  
         
         # Set contract
-        _addr = "zil1hgg7k77vpgpwj3av7q7vv5dl4uvunmqqjzpv2w"
+        # _addr = "zil1hgg7k77vpgpwj3av7q7vv5dl4uvunmqqjzpv2w"
+        _addr = "zil1yapyfmkhzxmgyeg5pkqmxjxxhuut4j9hpfy97l"
         self.contract = Contract.load_from_address(_addr, load_state=True)
         
         # Set pyzil default API endpoint
-        # active_chain.api = ZilliqaAPI("https://ssn.zillet.io/")
-        active_chain.api = ZilliqaAPI("http://localhost:4201")
+        active_chain.api = ZilliqaAPI("https://ssn.zillet.io/")
+        # active_chain.api = ZilliqaAPI("http://localhost:4201")
 
         # Delete existing index
         # self.es.indices.delete(index='zilcrawl', ignore=[400, 404])
@@ -69,7 +70,8 @@ class zilcrawl:
             block_begin = int(res['aggregations']['max_id']['value'])+1
         except Exception as e:
             print(e)
-            block_begin = 811030  # Zilswap Contract Creation
+           # block_begin = 811030  # Zilswap Contract Creation
+            block_begin = 1085759  # Buttcoin Contract Creation
         
 
         block_end   = int(chain.active_chain.api.GetNumTxBlocks())
