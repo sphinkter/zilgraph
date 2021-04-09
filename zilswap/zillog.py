@@ -14,7 +14,7 @@ class zillog:
     def __init__(self, password=""):
         
         # Configure MongoDB
-        self.mongoclient = pymongo.MongoClient("mongodb://localhost:27017/")
+        self.mongoclient = pymongo.MongoClient("mongodb://172.17.0.4:27017/")
         self.mongodb = self.mongoclient["zillog"]
         
         # Load Zilgraph JSON 
