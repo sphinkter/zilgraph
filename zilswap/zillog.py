@@ -27,7 +27,8 @@ class zillog:
             self.token[tok]      = self.mongodb[tok]
         
         # Wallet address
-        addr = "zil1y7kr7nh28p5j3tv76jm5nkp2yq56j8xwsq5utr"
+        # addr = "zil1y7kr7nh28p5j3tv76jm5nkp2yq56j8xwsq5utr"
+        addr = "zil1ekstgkgqdjh3k6xjtn0x47p49t7dlfentla8rs"
         
         # Load account from private key
         account = Account(address=addr)
