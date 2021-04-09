@@ -3,6 +3,18 @@
         "butt"  : {
             "addr" : "zil1yapyfmkhzxmgyeg5pkqmxjxxhuut4j9hpfy97l",
             "decimals" : 0
+        },
+        "gzil"  : {
+            "addr"     : "zil14pzuzq6v6pmmmrfjhczywguu0e97djepxt8g3e",
+            "decimals" : 15
+        },
+        "xsgd"  : {
+            "addr"     : "zil1zu72vac254htqpg3mtywdcfm84l3dfd9qzww8t",
+            "decimals" : 6
+        },
+        "zwap"  : {
+            "addr"     : "zil1p5suryq6q647usxczale29cu3336hhp376c627",
+            "decimals" : 12
         }
     }
 }
