@@ -42,8 +42,8 @@ class zilcrawl:
         chain.set_active_chain(chain.MainNet)  
         
         # Set contract
-        # _addr = "zil1hgg7k77vpgpwj3av7q7vv5dl4uvunmqqjzpv2w"
-        _addr = "zil1yapyfmkhzxmgyeg5pkqmxjxxhuut4j9hpfy97l"
+        _addr = "zil1hgg7k77vpgpwj3av7q7vv5dl4uvunmqqjzpv2w"
+        # _addr = "zil1yapyfmkhzxmgyeg5pkqmxjxxhuut4j9hpfy97l"
         self.contract = Contract.load_from_address(_addr, load_state=True)
         
         # Set pyzil default API endpoint
