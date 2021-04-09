@@ -34,7 +34,7 @@ class zilcrawl:
         self.es = Elasticsearch(http_auth=('elastic', password))
         
         # Configure MongoDB
-        self.mongoclient = pymongo.MongoClient("mongodb://localhost:27017/")
+        self.mongoclient = pymongo.MongoClient("mongodb://172.17.0.4:27017/")
         self.mongodb = self.mongoclient["zilcrawl"]
 
     def run(self):
