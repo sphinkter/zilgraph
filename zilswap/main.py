@@ -26,7 +26,7 @@ import pymongo
 ###  Init Price Chart  ####
 ###########################
 
-mongoclient = pymongo.MongoClient("mongodb://172.16.0.4:27017/")
+mongoclient = pymongo.MongoClient("mongodb://172.17.0.4:27017/")
 mongodb = mongoclient["zilcrawl"]
 
 # Load Zilgraph JSON 
@@ -40,7 +40,7 @@ tokens = json.load(fp_json)["tokens"]
 
 
 # Configure MongoDB
-mongoclient = pymongo.MongoClient("mongodb://172.16.0.4:27017/")
+mongoclient = pymongo.MongoClient("mongodb://172.17.0.4:27017/")
 mongodb = mongoclient["zillog"]
 
 # Legacy dictionaries (to be replaced)
